@@ -1,0 +1,13 @@
+name: minimizer-creator
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python
+  - biopython
+  - nextclade
+  - pip
+  - PyYAML
+  - snakemake
+  - ncbi-datasets-cli >=16.33.0
+  - click
