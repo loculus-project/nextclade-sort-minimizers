@@ -1,6 +1,11 @@
+rule all:
+    input:
+        "results/minimizer.json",
+
+
 rule download_references:
     input:
-        config="config/config.yaml"
+        config="config/config.yaml",
     output:
         reference_genome="results/references.fasta",
     shell:
@@ -10,18 +15,17 @@ rule download_references:
             --segment-file {output.reference_genome} \
         """
 
+
 rule create_minimizer:
     input:
         reference="results/references.fasta",
+        config="config/config.yaml",
     output:
-        minimizer="results/minimizer.json"
+        minimizer="results/minimizer.json",
     shell:
         """
         python scripts/create_minimizer_index.py \
             --references-fasta {input.reference} \
             --minimizer-json {output.minimizer} \
-        """ 
-
-rule all:
-    input:
-        "results/minimizer.json"
+            --config-file {input.config}
+        """
