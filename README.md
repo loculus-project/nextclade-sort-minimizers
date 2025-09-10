@@ -39,7 +39,7 @@ You can also set the specificity of your minimizer index as a value `threshold` 
 Run the creation script:
 
 ```bash 
-snakemake
+snakemake --config config_file=<path-to-config-file>
 ```
 
 ## Using your minimizer in Loculus

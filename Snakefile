@@ -5,7 +5,7 @@ rule all:
 
 rule download_references:
     input:
-        config="config/config.yaml",
+        config=config["config_file"],
     output:
         reference_genome="results/references.fasta",
     shell:
@@ -19,7 +19,7 @@ rule download_references:
 rule create_minimizer:
     input:
         reference="results/references.fasta",
-        config="config/config.yaml",
+        config=config["config_file"],
     output:
         minimizer="results/minimizer.json",
     shell:
