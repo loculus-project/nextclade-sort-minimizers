@@ -2,5 +2,6 @@ references:
   rsv-a: PP109421.1
   rsv-b: OP975389.1
   bovine-rsv: NC_038272.1
+  murine-rsv: NC_025344.1
 threshold: 31
 
