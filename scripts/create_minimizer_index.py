@@ -1,5 +1,6 @@
 ## This is a copy of https://github.com/nextstrain/nextclade_data/blob/master/scripts/lib/minimizer.py
 import copy
+import os
 
 import numpy as np
 from Bio.SeqRecord import SeqRecord
@@ -143,6 +144,7 @@ def main(references_fasta: str, minimizer_json: str, config_file: str) -> None:
     index = make_ref_search_index(refs, cutoff)
 
     serialized = serialize_ref_search_index(index)
+    os.makedirs(os.path.dirname(minimizer_json), exist_ok=True)
 
     with open(minimizer_json, "w") as f:
         json.dump(serialized, f)
