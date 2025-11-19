@@ -133,7 +133,7 @@ def main(references_fasta: str, minimizer_json: str, config_file: str) -> None:
     with open(config_file, encoding="utf-8") as file:
         full_config = yaml.safe_load(file)
         cutoff_threshold = full_config.get("threshold", 28)
-        if cutoff_threshold < 1 or cutoff_threshold > 31:
+        if cutoff_threshold < 1 or cutoff_threshold > 32:
             raise ValueError(
                 f"Invalid threshold value {cutoff_threshold}. Must be between 1 and 31."
             )
