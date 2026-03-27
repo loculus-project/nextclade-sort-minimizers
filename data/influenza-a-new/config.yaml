@@ -3,19 +3,16 @@ references:
   seg1-h1n1: NC_002023.1
   seg1-h1n1-avian: PZ128522.1
   seg1-h3n2: NC_007373.1
-  seg1-h3n2-CY163687: CY163687.1
   seg1-h2n2: NC_007378.1
   seg2-h1n1pdm: NC_026435.1
   seg2-h1n1: NC_002021.1
   seg2-h1n1-avian: PZ128523.1
   seg2-h3n2: NC_007372.1
-  seg2-h3n2-CY163686: CY163686.1
   seg2-h2n2: NC_007375.1
   seg3-h1n1pdm: NC_026437.1
   seg3-h1n1: NC_002022.1
   seg3-h1n1-avian: PZ128524.1
   seg3-h3n2: NC_007371.1
-  seg3-h3n2-CY163685: CY163685.1
   seg3-h2n2: NC_007376.1
   seg4-h1_h1n1pdm: NC_026433.1
   seg4-h1_h1n1: NC_002017.1
@@ -42,9 +39,8 @@ references:
   seg5-h1n1pdm: NC_026436.1
   seg5-h1n1: NC_002019.1
   seg5-h1n1-avian: PZ128526.1
+  seg5-h2n2: CY077787.1
   seg5-h3n2: NC_007369.1
-  seg5-h3n2-CY163683: CY163683.1
-  seg5-h2n2: NC_007378.1
   seg6-n1_h1n1pdm: NC_026434.1
   seg6-n1_h1n1: NC_002018.1
   seg6-n2_h3n2: NC_007368.1
@@ -69,12 +65,10 @@ references:
   seg7-h1n1: NC_002016.1
   seg7-h1n1-avian: PZ128528.1
   seg7-h3n2: NC_007367.1
-  seg7-h3n2-CY163681: CY163681.1
   seg7-h2n2: NC_007377.1
   seg8-h1n1pdm: NC_026432.1
   seg8-h1n1: NC_002020.1
   seg8-h1n1-avian: PZ128529.1
   seg8-h3n2: NC_007370.1
-  seg8-h3n2-CY163684: CY163684.1
   seg8-h2n2: NC_007380.1
 threshold: 31
